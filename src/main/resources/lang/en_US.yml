@@ -1,0 +1,125 @@
+log:
+  vault:
+    not-found: "Vault not found or economy provider missing. Disabling plugin."
+  storage:
+    section-missing: "Storage section not found in config file. Disabling plugin."
+    backend-missing: "Disabling plugin due to missing storage backend"
+  jdbc:
+    loading-failed: "Loading JDBC (database) classes failed"
+  loaded-bazaars: "Loaded %s bazaars from database"
+  enabled: "MMOBazaar enabled"
+  saved-bazaars: "Saved all %s bazaars to storage"
+  save-failed: "Failed to save bazaars on shutdown"
+  disabled: "MMOBazaar disabled."
+  default-lang-error: "Could not load default translation file: falling back to en_US.yml"
+  fallback-lang-fatal: "Could not load fallback en_US.yml from JAR!"
+  transaction-failed: "Transaction failed"
+  connection-failed: "Connection failed"
+  query-failed: "Query failed"
+  corrupted-bazaar: "Skipping corrupted or unreachable bazaar"
+
+items:
+  bazaar-bag:
+    name: "Bazaar Bag"
+    lore:
+      usage: "Right-click to open your shop."
+      cost-header: "Opening a shop costs:"
+      cost-line: "$%s"
+
+gui:
+  bank-button:
+    name: "Bazaar Bank"
+    lore:
+      current: "Currently: $%s"
+      withdraw: "Click to withdraw money from your bazaar"
+  time-left-button:
+    name: "Time Left"
+    lore:
+      remaining: "%s"
+      extend: "Click to extend for $%s"
+  delete-bazaar-button:
+    name: "Delete Bazaar"
+    lore: "Removes the bazaar and refunds items"
+  rotate-bazaar-button:
+    name: "Rotate Bazaar"
+    lore: "Click to rotate stand 15°"
+  confirm:
+    title: "Buy for $%s"
+    button:
+      name: "Confirm Purchase"
+      lore:
+        price: "Price: $%s"
+        seller: "Seller: %s"
+        click: "Click to confirm"
+    preview:
+      lore:
+        price: "Price: $%s"
+        click: "Click to confirm purchase"
+    cancel:
+      name: "Cancel"
+  create:
+    title: "Bazaar Name"
+    text: "Enter Name"
+  enter-price:
+    title: "Enter Price"
+  edit-price:
+    title: "Edit Price"
+  bazaar:
+    closed-prefix: "[CLOSED] "
+  lore:
+    listing:
+      price: "Price: $%s"
+      seller: "Seller: %s"
+      click-to-buy: "Click to buy"
+      left-click-edit: "LEFT CLICK to edit price"
+      right-click-remove: "RIGHT CLICK to remove"
+
+time:
+  unit:
+    day: "d"
+    hour: "h"
+    minute: "m"
+
+msg:
+  bazaar:
+    name-empty: "Bazaar name cannot be empty."
+    need-bag: "You need a bazaar bag to open bazaar"
+    need-money: "You need at least $%s to open a bazaar."
+    limit-reached: "You cannot have more than %s bazaars."
+    created: "Bazaar created and $%s withdrawn."
+    create-failed: "Failed to create bazaar."
+    create-cancelled: "Bazaar creation cancelled."
+    closed: "Your bazaar has been closed."
+    closed-refund: "Items and $%s returned."
+    rotated: "Bazaar rotated!"
+    created-announce: "Bazaar created: %s"
+  extend:
+    need-money: "You don’t have enough money to extend your bazaar."
+    success: "Extended bazaar by 1 day for %s"
+    limit: "You can't extend beyond 2 days from now."
+  withdraw:
+    success: "Withdrawn $%s to your balance."
+  listing-removed: "Listing removed."
+  item:
+    listed: "Item listed for $%s"
+    mismatch: "This item does not match the listing. Please reopen the shop."
+  price:
+    invalid: "Invalid price."
+    updated: "Price updated to $%s"
+    update-failed: "Failed to update price: listing not found."
+    changed: "The item's price has changed. Please reopen the bazaar."
+  not-enough-money: "You don’t have enough money."
+  item-no-longer-available: "This item is no longer available."
+  inventory-full: "Not enough inventory space."
+  purchase-success: "You bought the item for $%s."
+  purchase-notify-owner: "Someone bought an item from your bazaar."
+  purchase-cancelled: "Purchase cancelled."
+  bazaar-updating: "This bazaar is being updated. Please try again in a moment."
+  player-not-found: "Player not found."
+  amount-positive: "Amount must be a positive number."
+  bag-given: "Gave %sx Market Bag to %s"
+  command-usage: "Usage: /mmobazaar give <player> [amount]"
+  bag-added: "Bazaar Bag added to your inventory."
+  bags-added: "%sx Bazaar Bag added to your inventory."
+  too-close: "You are too close to another bazaar."
+  transaction-failed: "Transaction failed, check your funds"
